@@ -1,0 +1,39 @@
+{
+  "name": "baraco",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "aos": "^2.3.4",
+    "embla-carousel-react": "^8.5.2",
+    "framer-motion": "^12.4.7",
+    "i18next": "^24.2.2",
+    "i18next-browser-languagedetector": "^8.0.4",
+    "i18next-http-backend": "^3.0.2",
+    "lucide-react": "^0.475.0",
+    "next": "15.1.7",
+    "next-intl": "^3.26.5",
+    "nodemailer": "^6.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^15.4.1",
+    "react-slick": "^0.30.3",
+    "react-spinners": "^0.15.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.5",
+    "@types/react": "19.0.10",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.7.3"
+  }
+}
