@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
-/// hero page
+/// hero
 function Hero() {
   useEffect(() => {
     AOS.init({
@@ -13,6 +13,7 @@ function Hero() {
       disable: "phone", // Prevent animations on mobile for better performance
     });
   }, []);
+
 
   return (
     <section

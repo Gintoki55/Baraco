@@ -1,8 +1,8 @@
-"use client";
+// "use client";
 import Image from "next/image";
 import { BarLoader } from "react-spinners";
 
-export default function Loading() {
+export default async function Loading() {
   return (
     <div className="flex flex-col items-center justify-center h-[80vh] bg-white">
       {/* الشعار */}

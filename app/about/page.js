@@ -14,7 +14,8 @@ export const metadata = {
 };
 
 
-function AboutPage() {
+async function AboutPage() {
+   await new Promise(resolve => setTimeout(resolve, 3000));
   return (
     <>
       {/* Hero Section */}

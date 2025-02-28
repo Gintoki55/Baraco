@@ -11,7 +11,8 @@ export const metadata = {
   description: "Discover Baraco’s innovative solutions in international trade and logistics, connecting businesses worldwide with efficiency and reliability.",
 };
 
-function Home() {
+async function Home() {
+  await new Promise(resolve => setTimeout(resolve, 3000));
   return (
     <main>
       <section>

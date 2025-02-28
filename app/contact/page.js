@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 import FormJsx from '../components/Form';
 import HeroContact from '../components/heroContact';
@@ -8,7 +7,8 @@ export const metadata = {
   description: "Get in touch with Baraco for expert solutions in trade and logistics. Reach out via email, phone, or visit our office for more information.",
 };
 
-function Contact() {
+async function Contact() {
+  await new Promise(resolve => setTimeout(resolve, 3000));
   return (
     <>
       {/* Hero Section */}

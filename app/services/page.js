@@ -9,7 +9,8 @@ export const metadata = {
   description: "Explore Baraco’s comprehensive trade and logistics services, including international representation, freight solutions, and value-added logistics support.",
 };
 
-function Services() {
+async function Services() {
+  await new Promise(resolve => setTimeout(resolve, 3000));
   return (
     <>
       {/* Hero Section */}
