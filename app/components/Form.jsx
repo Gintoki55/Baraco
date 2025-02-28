@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
 
+
 function FormJsx() {
+  const formspreeUrl = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -25,7 +27,7 @@ function FormJsx() {
     setErrorMessage("");
 
     try {
-      const response = await fetch("https://formspree.io/f/xanqrweo", {
+      const response = await fetch(formspreeUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

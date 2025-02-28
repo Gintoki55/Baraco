@@ -19,7 +19,7 @@ export const agreementsItems = [
     {
         name: "Al Salaam Travel and Tourism",
         img: "/images/salaam.png",
-        Link: null, 
+        Link: null,
     },
 ];
 
@@ -33,8 +33,13 @@ function Agreements() {
 
             {/* Agreements List */}
             <div className="grid lg:grid-cols-4 max-lg:grid-cols-2 max-sm:grid-cols-1 place-items-center gap-10 px-4">
-                {agreementsItems.map(({ name, img, Link }) => (
-                    Link ? (
+                {agreementsItems.map(({ name, img, Link }, index) => {
+                    const isLastItem = index === agreementsItems.length - 1;
+                    const imgSize = isLastItem
+                        ? "sm:w-[200px] sm:h-[200px] w-[170px] h-[170px]"
+                        : "sm:w-[150px] sm:h-[150px] w-[120px] h-[120px]";
+
+                    return Link ? (
                         <a
                             href={Link}
                             key={name}
@@ -46,7 +51,7 @@ function Agreements() {
                                 <img
                                     src={img}
                                     alt={name}
-                                    className="sm:w-[150px] sm:h-[150px] w-[120px] h-[120px] object-contain opacity-90 hover:opacity-100"
+                                    className={`object-contain opacity-90 hover:opacity-100 transition-all ${imgSize}`}
                                 />
                             </figure>
                         </a>
@@ -59,12 +64,12 @@ function Agreements() {
                                 <img
                                     src={img}
                                     alt={name}
-                                    className="sm:w-[150px] sm:h-[150px] w-[120px] h-[120px] object-contain"
+                                    className={`object-contain transition-all ${imgSize}`}
                                 />
                             </figure>
                         </div>
-                    )
-                ))}
+                    );
+                })}
             </div>
         </section>
     );
