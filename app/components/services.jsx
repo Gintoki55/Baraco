@@ -47,7 +47,7 @@ function ServicesJsx() {
             {!expanded && (
               <button
                 onClick={() => setExpanded(true)}
-                className="ml-2 text-[#184b72] hover:text-[#193850] font-medium"
+                className="ml-2 text-[#184b72] hover:text-[#193850] font-medium hover:underline"
               >
                 Read More
               </button>
