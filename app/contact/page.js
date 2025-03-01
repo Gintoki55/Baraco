@@ -7,8 +7,8 @@ export const metadata = {
   description: "Get in touch with Baraco for expert solutions in trade and logistics. Reach out via email, phone, or visit our office for more information.",
 };
 
-async function Contact() {
-  await new Promise(resolve => setTimeout(resolve, 1000));
+function Contact() {
+
   return (
     <>
       {/* Hero Section */}
