@@ -12,7 +12,7 @@ export const metadata = {
 };
 
 async function Home() {
-  await new Promise(resolve => setTimeout(resolve, 3000));
+  await new Promise(resolve => setTimeout(resolve, 1000));
   return (
     <main>
       <section>

@@ -5,7 +5,7 @@ import Header from "./components/header";
 import Footer from "./components/Footer";
 import { SelectedLanguageProvider } from "./context/SelectedLanguageContext";
 import ArrowBtn from "./components/arrow";
-import Loading from "./loading";
+import Loading from "../loading";
 import { Suspense } from "react";
 // تحسين تحميل الخطوط مع display: "swap" وتقليل الأوزان غير الضرورية
 const poppins = Poppins({
