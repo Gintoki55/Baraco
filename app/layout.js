@@ -6,49 +6,31 @@ import Footer from "./components/Footer";
 import { SelectedLanguageProvider } from "./context/SelectedLanguageContext";
 import ArrowBtn from "./components/arrow";
 // تحسين تحميل الخطوط مع display: "swap" وتقليل الأوزان غير الضرورية
-const poppins = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["400", "600"], 
-  display: "swap",
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-  weight: ["400", "700"], 
-  display: "swap",
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["400", "600"], 
-  display: "swap",
-});
+// تحسين تحميل الخطوط
+const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"], display: "swap" });
+const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"], display: "swap" });
+const inter = Inter({ subsets: ["latin"], weight: ["400", "600"], display: "swap" });
 
 export default function RootLayout({ children }) {
-  const fontsClass = `${montserrat.variable} ${poppins.variable} ${inter.variable} antialiased`;
-
   return (
     <html lang="en">
       <Head>
-        <title>Baraco - Innovative Solutions for Your Business</title>
+        <title>Barkhad Baraco - Innovative Business Solutions</title>
         <meta name="description" content="Baraco provides top-notch business solutions, from digital transformation to strategic consulting. Discover our services and elevate your business today." />
-        <meta name="keywords" content="Baraco, business solutions, digital transformation, consulting, strategy, innovation, technology" />
+        <meta name="keywords" content="Barkhad Baraco, Barkhad International, business solutions, digital transformation, consulting, strategy, innovation, technology, enterprise solutions, startup growth, IT solutions, business development, digital marketing, financial consulting, management solutions, e-commerce, AI solutions,branding, investment consulting, market analysis, international business, corporate strategy, strategic planning" />
         <meta name="robots" content="index, follow" />
 
         {/* Open Graph (Facebook) */}
-        <meta property="og:title" content="Baraco - Innovative Solutions" />
+        <meta property="og:title" content="Barkhad Baraco - Innovative Business Solutions" />
         <meta property="og:description" content="Empowering businesses with modern solutions. Explore our expertise in technology, strategy, and digital transformation." />
-        <meta property="og:url" content="https://baraco.com" />
-        <meta property="og:site_name" content="Baraco" />
+        <meta property="og:url" content="https://barkhad-baraco.com" />
+        <meta property="og:site_name" content="Barkhad Baraco" />
         <meta property="og:image" content="/Logo.png" />
         <meta property="og:type" content="website" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Baraco - Innovative Solutions" />
+        <meta name="twitter:title" content="Barkhad Baraco - Innovative Business Solutions" />
         <meta name="twitter:description" content="Providing cutting-edge business solutions for digital success." />
         <meta name="twitter:image" content="/Logo.png" />
 
@@ -59,7 +41,7 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <body className={fontsClass}>
+      <body  className={`${montserrat.className} ${poppins.className} ${inter.className} antialiased`}>
         <SelectedLanguageProvider>
           <Header />
             <main>

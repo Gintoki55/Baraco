@@ -10,7 +10,6 @@ const images = [
   "/images/b10.jpeg",
   "/images/b11.jpeg",
   "/images/b12.jpeg",
-  // "/images/b13.jpeg",
   "/images/b14.jpeg",
   "/images/b15.webp",
   "/images/b16.webp",
@@ -24,8 +23,6 @@ const images = [
   "/images/b2.jpeg",
   "/images/b3.jpeg",
   "/images/b4.jpeg",
-  // "/images/b5.jpeg",
-  // "/images/b6.webp",
 ];
 
 const ImageSlider = () => {
