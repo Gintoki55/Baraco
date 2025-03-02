@@ -4,7 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
 const images = [
-  "/images/b7.webp",
+  "/images/b7.jpeg",
   "/images/b8.png",
   "/images/b9.jpeg",
   "/images/b10.jpeg",
@@ -24,8 +24,8 @@ const images = [
   "/images/b2.jpeg",
   "/images/b3.jpeg",
   "/images/b4.jpeg",
-  "/images/b5.jpeg",
-  "/images/b6.webp",
+  // "/images/b5.jpeg",
+  // "/images/b6.webp",
 ];
 
 const ImageSlider = () => {
