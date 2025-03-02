@@ -5,6 +5,7 @@ import Header from "./components/header";
 import Footer from "./components/Footer";
 import { SelectedLanguageProvider } from "./context/SelectedLanguageContext";
 import ArrowBtn from "./components/arrow";
+import { Analytics } from "@vercel/analytics/react"
 // تحسين تحميل الخطوط مع display: "swap" وتقليل الأوزان غير الضرورية
 // تحسين تحميل الخطوط
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"], display: "swap" });
@@ -19,6 +20,8 @@ export default function RootLayout({ children }) {
         <meta name="description" content="Baraco provides top-notch business solutions, from digital transformation to strategic consulting. Discover our services and elevate your business today." />
         <meta name="keywords" content="Barkhad Baraco, Barkhad International, business solutions, digital transformation, consulting, strategy, innovation, technology, enterprise solutions, startup growth, IT solutions, business development, digital marketing, financial consulting, management solutions, e-commerce, AI solutions,branding, investment consulting, market analysis, international business, corporate strategy, strategic planning" />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="canonical" href="https://barkhad-baraco.com" />
 
         {/* Open Graph (Facebook) */}
         <meta property="og:title" content="Barkhad Baraco - Innovative Business Solutions" />
@@ -46,6 +49,7 @@ export default function RootLayout({ children }) {
           <Header />
             <main>
               {children}
+              <Analytics/>
             </main>
           <ArrowBtn />
           <Footer />
