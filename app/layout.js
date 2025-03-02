@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import { SelectedLanguageProvider } from "./context/SelectedLanguageContext";
 import ArrowBtn from "./components/arrow";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 // تحسين تحميل الخطوط مع display: "swap" وتقليل الأوزان غير الضرورية
 // تحسين تحميل الخطوط
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "600"], display: "swap" });
@@ -50,6 +51,7 @@ export default function RootLayout({ children }) {
             <main>
               {children}
               <Analytics/>
+              <SpeedInsights/>
             </main>
           <ArrowBtn />
           <Footer />

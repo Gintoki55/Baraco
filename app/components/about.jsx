@@ -56,7 +56,7 @@ function About() {
         <div className="mt-6">
           <Link
             href="/about"
-            className="inline-flex items-center px-5 py-2 text-lg font-medium text-white bg-[#184b72] rounded-lg hover:bg-[#F4A261] transition duration-300"
+            className="inline-flex items-center px-5 py-2 text-lg font-medium text-white bg-[#184b72] rounded-lg hover:bg-[#375675] transition duration-300"
           >
             Learn More
             <svg
