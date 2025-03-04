@@ -2,7 +2,7 @@ import React from 'react';
 import ServicesJsx from '../components/services';
 import FAQs from '../components/faQs';
 import ContactSection from '../components/contact';
-import HeroSerivces from '../components/heroSerivces';
+import Hero from '../components/hero';
 
 export const metadata = {
   title: "Our Services - Baraco",
@@ -13,8 +13,8 @@ function Services() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative sm:min-h-screen h-[329px] flex items-center justify-center text-center px-4">
-        <HeroSerivces />
+      <section >
+        <Hero title="Our Services" subtitle="The quality you expect, the options you need." image="/images/b15.png" />
       </section>
 
       {/* Main Content */}

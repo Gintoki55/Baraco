@@ -11,11 +11,12 @@ export const metadata = {
   description: "Discover Baraco’s innovative solutions in international trade and logistics, connecting businesses worldwide with efficiency and reliability.",
 };
 
+
 function Home() {
   return (
     <main>
-      <section>
-        <Hero />
+      <section className="object-top">
+        <Hero title="BARACO" subtitle="The quality you expect, the options you need." image="/images/b22.png" />
       </section>
 
       <section>

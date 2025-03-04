@@ -6,7 +6,7 @@ import ImgSliders from '../components/imgSliders';
 import ContactSection from '../components/contact';
 import WhoWeAre from '../components/whoweSection';
 import VisionAndMission from '../components/VisionAndMission';
-import HeroAbout from '../components/heroAbout';
+import Hero from '../components/hero';
 
 export const metadata = {
   title: "About Us - Baraco",
@@ -18,9 +18,11 @@ function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className='relative sm:min-h-screen h-[329px] flex items-center justify-center text-center px-4'>
-        <HeroAbout />
-      </section>
+
+        <section>
+          <Hero title="About BARACO" subtitle="The quality you expect, the options you need." image="/images/b21.png" />
+        </section>
+      
         <section>
           <Agreements />
         </section>

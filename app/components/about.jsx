@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CheckBadgeIcon } from "@heroicons/react/24/solid";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const services = [
   "Global Trading & Agencies",
@@ -19,15 +17,12 @@ const services = [
 ];
 
 function About() {
-  const [isClient, setIsClient] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setIsClient(true); // Ensures rendering occurs only on the client
-    AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: true,
-    });
+    // Simulate loading delay
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -37,17 +32,30 @@ function About() {
         <h1 className="text-3xl md:text-4xl font-bold text-[#184b72] mb-6">
           About Us
         </h1>
-        <p className="text-lg md:text-xl mb-4 text-slate-700">
-          <b>Baraco Trading & Contracting Company</b> has been a leading force
-          in Trading, Logistics, and Fuel Supply in Oman <b>since 1998.</b> Over
-          the years, we have expanded our expertise to cover a wide range of
-          industries, making us a trusted name in multiple sectors.
-        </p>
+
+        {/* Skeleton or actual content */}
+        {loading ? (
+          <div className="space-y-3">
+            <div className="h-6 w-3/4 bg-gray-300 rounded animate-pulse"></div>
+            <div className="h-6 w-full bg-gray-300 rounded animate-pulse"></div>
+            <div className="h-6 w-5/6 bg-gray-300 rounded animate-pulse"></div>
+          </div>
+        ) : (
+          <p className="text-lg md:text-xl mb-4 text-slate-700">
+            <b>Baraco Trading & Contracting Company</b> has been a leading force
+            in Trading, Logistics, and Fuel Supply in Oman{" "}
+            <b>since 1998.</b> Over the years, we have expanded our expertise
+            to cover a wide range of industries, making us a trusted name in
+            multiple sectors.
+          </p>
+        )}
+
+        {/* Services List */}
         <ul className="text-base md:text-lg text-gray-700 leading-relaxed mt-5 space-y-3">
           {services.map((service, index) => (
             <li key={index} className="flex items-center">
               <CheckBadgeIcon className="w-6 h-6 text-[#255478] mr-2" />
-              {service}
+              {loading ? <span className="bg-gray-300 text-transparent rounded">{service}</span> : service }
             </li>
           ))}
         </ul>
@@ -75,21 +83,16 @@ function About() {
         </div>
       </div>
 
-      {/* Right Section (Image) - Only Render on Client */}
-      {isClient && (
-        <div
-          className="flex-1 flex justify-center items-center mt-10 lg:mt-0 max-lg:hidden"
-          data-aos="fade-left"
-        >
-          <Image
-            src="/images/Logo.png"
-            alt="Company Logo"
-            width={400}
-            height={400}
-            className="max-w-[80%] md:max-w-[60%] lg:max-w-[80%] object-contain"
-          />
-        </div>
-      )}
+      {/* Right Section (Image) */}
+      <div className="flex-1 flex justify-center items-center mt-10 lg:mt-0 max-lg:hidden">
+        <Image
+          src="/images/Logo.png"
+          alt="Company Logo"
+          width={400}
+          height={400}
+          className="max-w-[80%] md:max-w-[60%] lg:max-w-[80%] object-contain"
+        />
+      </div>
     </section>
   );
 }

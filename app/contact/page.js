@@ -1,6 +1,6 @@
 import React from 'react';
 import FormJsx from '../components/Form';
-import HeroContact from '../components/heroContact';
+import Hero from '../components/hero';
 
 export const metadata = {
   title: "Contact Us - Baraco",
@@ -12,8 +12,8 @@ function Contact() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative sm:min-h-screen h-[329px] flex items-center justify-center text-center px-4">
-        <HeroContact />
+      <section>
+       <Hero title="Contact Us" subtitle="The quality you expect, the options you need." image="/images/b18.png" imgClass="object-top" />
       </section>
 
       <section>
