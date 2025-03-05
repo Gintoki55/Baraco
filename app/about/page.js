@@ -20,7 +20,7 @@ function AboutPage() {
       {/* Hero Section */}
 
         <section>
-          <Hero title="About BARACO" subtitle="The quality you expect, the options you need." image="/images/b21.png" />
+          <Hero title="About BARACO" subtitle="The quality you expect, the options you need." image="/images/b21.webp" textSize='text-4xl sm:text-7xl' />
         </section>
       
         <section>

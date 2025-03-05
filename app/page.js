@@ -16,7 +16,7 @@ function Home() {
   return (
     <main>
       <section className="object-top">
-        <Hero title="BARACO" subtitle="The quality you expect, the options you need." image="/images/b22.png" />
+        <Hero title="BARACO" subtitle="The quality you expect, the options you need." image="/images/b22.webp" />
       </section>
 
       <section>

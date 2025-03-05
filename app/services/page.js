@@ -14,7 +14,7 @@ function Services() {
     <>
       {/* Hero Section */}
       <section >
-        <Hero title="Our Services" subtitle="The quality you expect, the options you need." image="/images/b15.png" />
+        <Hero title="Our Services" subtitle="The quality you expect, the options you need." image="/images/b15.webp" marginTop="mt-16"/>
       </section>
 
       {/* Main Content */}

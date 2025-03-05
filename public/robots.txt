@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://barkhad-group.com/sitemap.xml

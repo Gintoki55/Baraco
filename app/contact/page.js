@@ -13,7 +13,7 @@ function Contact() {
     <>
       {/* Hero Section */}
       <section>
-       <Hero title="Contact Us" subtitle="The quality you expect, the options you need." image="/images/b18.png" imgClass="object-top" />
+       <Hero title="Contact Us" subtitle="The quality you expect, the options you need." image="/images/b18.webp" imgClass="object-top" />
       </section>
 
       <section>
