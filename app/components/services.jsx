@@ -9,7 +9,7 @@ function ServicesJsx() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoaded(true);
-    }, 500); // تأخير بسيط لجعل تأثير التحميل واضحًا
+    }, 500); 
   }, []);
 
   const shortDescription = (
