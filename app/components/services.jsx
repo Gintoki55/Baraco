@@ -62,7 +62,7 @@ function ServicesJsx() {
                 {img}
               </div>
               <h3 className="mb-2 text-2xl font-bold text-[#193850]">
-                {isLoaded ? title : <span className="bg-gray-300 text-transparent rounded">{title}</span>}
+                {title}
               </h3>
               <p className="text-gray-500">
                 {isLoaded ? description : <span className="bg-gray-300 text-transparent rounded">{description}</span>}
