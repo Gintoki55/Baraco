@@ -31,7 +31,7 @@ const sections = [
 
 function Footer() {
   return (
-    <footer className="bg-gray-200">
+    <footer className="bg-gray-100">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row">
@@ -76,12 +76,10 @@ function Footer() {
         {/* Bottom Section */}
         <div className="flex justify-between items-center flex-wrap gap-4">
           {/* Copyright */}
-          <a
-            href="https://musical-meringue-277dca.netlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block text-sm sm:text-lg text-gray-500 hover:underline text-center"
-          >
+          <a href="https://musical-meringue-277dca.netlify.app"
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="block text-sm sm:text-lg text-gray-700 hover:underline text-center">
             © 2023 Ahmed Barkhad™. All Rights Reserved.
           </a>
 

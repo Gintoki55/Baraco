@@ -18,7 +18,7 @@ function ContactSection() {
         href="/contact"
         className="bg-[#193850] border border-[#193850] hover:bg-transparent text-white hover:text-[#193850] font-semibold px-6 py-3 rounded-lg transition duration-300"
       >
-        Get in Touch
+        contact
       </Link>
 
     </div>

@@ -18,7 +18,7 @@ function Header() {
   }, [isOpen]);
 
   return (
-    <header className="bg-[#184b72] shadow-md" role="navigation">
+    <header className="bg-[#184b72] shadow-md">
       <nav className="w-full sm:h-[90px] h-[80px] flex items-center justify-between px-4 sm:px-6">
         {/* Logo */}
         <div className="flex items-center gap-2">
