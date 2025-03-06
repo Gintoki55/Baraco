@@ -64,9 +64,11 @@ function About() {
         <div className="mt-6">
           <Link
             href="/about"
+            aria-label="Learn more about our company"
             className="inline-flex items-center px-5 py-2 text-lg font-medium text-white bg-[#184b72] rounded-lg hover:bg-[#375675] transition duration-300"
           >
             Learn More
+            <span className="sr-only"> about our company</span>
             <svg
               className="ml-2 w-6 h-6"
               fill="currentColor"
