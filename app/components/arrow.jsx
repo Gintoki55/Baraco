@@ -24,7 +24,6 @@ function ArrowBtn() {
   return (
     <button
       onClick={scrollToTop}
-      name="arrow button"
       className={`fixed bottom-5 right-5 bg-[#184b72] text-white p-2 rounded-lg shadow-lg transition-opacity duration-300 ${
         show ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
