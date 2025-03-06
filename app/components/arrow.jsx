@@ -29,6 +29,7 @@ function ArrowBtn() {
       }`}
     >
       <ChevronUp size={24} />
+      <span className="sr-only">up</span>
     </button>
   );
 }
